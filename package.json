@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "oclp-compass-ui-tests",
+  "scripts": {
+    "test:ui": "playwright test",
+    "format": "prettier --write compass/web tests/browser playwright.config.cjs package.json",
+    "format:check": "prettier --check compass/web tests/browser playwright.config.cjs package.json"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.62.1",
+    "prettier": "3.6.2"
+  },
+  "version": "0.2.0"
+}

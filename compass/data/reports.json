@@ -1,0 +1,32 @@
+[
+  {
+    "id": "reddit-1wo5p70",
+    "model": "MacBookPro13,3",
+    "os_major": 15,
+    "os_version": "15.8",
+    "oclp_version": "2.5.1",
+    "author": "reddit:Djinnjo",
+    "reported_on": null,
+    "reviewed_on": "2026-11-08",
+    "ram_gb": null,
+    "storage": "unknown",
+    "sentiment": "positive",
+    "summary": "Owner describes smooth operation after updating OCLP and Sequoia. RAM, disk, and workload unspecified.",
+    "url": "https://www.reddit.com/r/OpenCoreLegacyPatcher/comments/1wo5p70/successful_update_oclp_251_sequoia_158_on/"
+  },
+  {
+    "id": "reddit-1om0gy1",
+    "model": "MacBookPro12,1",
+    "os_major": 15,
+    "os_version": "15 (minor unspecified)",
+    "oclp_version": "unspecified",
+    "author": "reddit:Abject_Form_2603",
+    "reported_on": null,
+    "reviewed_on": "2026-11-08",
+    "ram_gb": 16,
+    "storage": "unknown",
+    "sentiment": "mixed",
+    "summary": "2015 13-inch owner finds Sequoia useful, slightly slower than Monterey, with fan noise and possible battery impact.",
+    "url": "https://www.reddit.com/r/OpenCoreLegacyPatcher/comments/1om0gy1/sequoia_running_pretty_well_on_my_2015_13_macbook/"
+  }
+]

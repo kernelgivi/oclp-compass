@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="450" viewBox="0 0 1280 450" role="img" aria-labelledby="title desc">
+<title id="title">Compass — macOS workbench</title><desc id="desc">Local macOS upgrade planning with hardware profiles, version comparison, owner evidence, a GUI, and a CLI. Original repository cover artwork, not an application screenshot.</desc>
+<rect width="1280" height="450" rx="8" fill="#121416"/>
+<path d="M42 40h1196M42 408h1196M780 40v368" stroke="#34393f"/>
+<g transform="translate(71 84) rotate(-45)"><rect x="-15" y="-15" width="30" height="30" fill="none" stroke="#a77d4c"/><path d="M0-10v20M-10 0h20" stroke="#f5b475"/><rect x="5" y="-11" width="6" height="6" fill="#f5b475"/></g>
+<text x="109" y="90" font-family="monospace" font-size="24" font-weight="600" fill="#f0f0ed" letter-spacing="2">COMPASS</text>
+<text x="45" y="154" font-family="monospace" font-size="12" fill="#a0a8ae" letter-spacing="2">MACOS WORKBENCH / 0.2</text>
+<text x="43" y="220" font-family="Arial,sans-serif" font-size="53" font-weight="600" letter-spacing="-2" fill="#f0f0ed">macOS upgrade planning.</text>
+<text x="46" y="263" font-family="Arial,sans-serif" font-size="20" fill="#bac0c5">Compare versions. Inspect the evidence.</text>
+<text x="46" y="293" font-family="Arial,sans-serif" font-size="20" fill="#bac0c5">Prepare a plan for your actual hardware.</text>
+<rect x="46" y="339" width="113" height="33" rx="3" fill="#30261d" stroke="#8c6944"/>
+<text x="61" y="361" font-family="monospace" font-size="12" fill="#f5b475">GUI + CLI</text>
+<text x="181" y="361" font-family="monospace" font-size="12" fill="#bac0c5">LOCAL ONLY / ZERO RUNTIME DEPENDENCIES</text>
+<g fill="none" stroke="#8c6944"><rect x="912" y="139" width="210" height="130" rx="4"/><rect x="924" y="151" width="186" height="106" rx="2"/>
+<path d="M930 112v27M955 112v27M980 112v27M1005 112v27M1030 112v27M1055 112v27M1080 112v27M1105 112v27M930 269v27M955 269v27M980 269v27M1005 269v27M1030 269v27M1055 269v27M1080 269v27M1105 269v27M843 160h69M843 183h69M843 206h69M843 229h69M843 252h69M1122 160h69M1122 183h69M1122 206h69M1122 229h69M1122 252h69"/>
+<path d="M954 179h126M954 204h126M954 229h126M979 169v70M1017 169v70M1055 169v70" stroke="#34393f"/>
+<rect x="1007" y="194" width="20" height="20" stroke="#f5b475"/></g>
+<text x="875" y="345" font-family="monospace" font-size="12" fill="#a0a8ae" letter-spacing="1.5">HARDWARE / POLICY / EVIDENCE</text>
+<text x="46" y="433" font-family="monospace" font-size="10" fill="#a0a8ae" letter-spacing="1">INDEPENDENT PROJECT BY ALI CHAWKI</text>
+<text x="1020" y="433" font-family="monospace" font-size="10" fill="#a0a8ae" letter-spacing="1">FUNCTIONAL ALPHA</text>
+</svg>

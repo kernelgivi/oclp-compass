@@ -1,0 +1,366 @@
+{
+  "MacBookPro8,1": {
+    "name": "MacBook Pro \u00b7 2011",
+    "native_max": 10,
+    "gpu_class": "non_metal",
+    "graphics_patch_from": 11,
+    "capacity": 62
+  },
+  "MacBookPro8,2": {
+    "name": "MacBook Pro \u00b7 2011",
+    "native_max": 10,
+    "gpu_class": "non_metal",
+    "graphics_patch_from": 11,
+    "capacity": 62
+  },
+  "MacBookPro8,3": {
+    "name": "MacBook Pro \u00b7 2011",
+    "native_max": 10,
+    "gpu_class": "non_metal",
+    "graphics_patch_from": 11,
+    "capacity": 62
+  },
+  "MacBookPro9,1": {
+    "name": "MacBook Pro \u00b7 2012 / early 2013",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 76
+  },
+  "MacBookPro9,2": {
+    "name": "MacBook Pro \u00b7 2012 / early 2013",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 76
+  },
+  "MacBookPro10,1": {
+    "name": "MacBook Pro \u00b7 2012 / early 2013",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 76
+  },
+  "MacBookPro10,2": {
+    "name": "MacBook Pro \u00b7 2012 / early 2013",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 76
+  },
+  "MacBookPro11,1": {
+    "name": "MacBook Pro \u00b7 late 2013 / 2014",
+    "native_max": 11,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 81
+  },
+  "MacBookPro11,2": {
+    "name": "MacBook Pro \u00b7 late 2013 / 2014",
+    "native_max": 11,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 81
+  },
+  "MacBookPro11,3": {
+    "name": "MacBook Pro \u00b7 late 2013 / 2014",
+    "native_max": 11,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 81
+  },
+  "MacBookPro11,4": {
+    "name": "MacBook Pro \u00b7 15-inch 2015",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 86
+  },
+  "MacBookPro11,5": {
+    "name": "MacBook Pro \u00b7 15-inch 2015",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 86
+  },
+  "MacBookPro12,1": {
+    "name": "MacBook Pro \u00b7 13-inch 2015",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 83
+  },
+  "MacBookPro13,1": {
+    "name": "MacBook Pro \u00b7 2016",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 88
+  },
+  "MacBookPro13,2": {
+    "name": "MacBook Pro \u00b7 2016",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 88
+  },
+  "MacBookPro13,3": {
+    "name": "MacBook Pro \u00b7 2016",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 88
+  },
+  "MacBookPro14,1": {
+    "name": "MacBook Pro \u00b7 2017",
+    "native_max": 13,
+    "gpu_class": "metal",
+    "graphics_patch_from": null,
+    "capacity": 90
+  },
+  "MacBookPro14,2": {
+    "name": "MacBook Pro \u00b7 2017",
+    "native_max": 13,
+    "gpu_class": "metal",
+    "graphics_patch_from": null,
+    "capacity": 90
+  },
+  "MacBookPro14,3": {
+    "name": "MacBook Pro \u00b7 2017",
+    "native_max": 13,
+    "gpu_class": "metal",
+    "graphics_patch_from": null,
+    "capacity": 90
+  },
+  "MacBookAir4,1": {
+    "name": "MacBook Air \u00b7 2011",
+    "native_max": 10,
+    "gpu_class": "non_metal",
+    "graphics_patch_from": 11,
+    "capacity": 53
+  },
+  "MacBookAir4,2": {
+    "name": "MacBook Air \u00b7 2011",
+    "native_max": 10,
+    "gpu_class": "non_metal",
+    "graphics_patch_from": 11,
+    "capacity": 53
+  },
+  "MacBookAir5,1": {
+    "name": "MacBook Air \u00b7 2012",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 64
+  },
+  "MacBookAir5,2": {
+    "name": "MacBook Air \u00b7 2012",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 64
+  },
+  "MacBookAir6,1": {
+    "name": "MacBook Air \u00b7 2013 / 2014",
+    "native_max": 11,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 68
+  },
+  "MacBookAir6,2": {
+    "name": "MacBook Air \u00b7 2013 / 2014",
+    "native_max": 11,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 68
+  },
+  "MacBookAir7,1": {
+    "name": "MacBook Air \u00b7 2015 / 2017",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 72
+  },
+  "MacBookAir7,2": {
+    "name": "MacBook Air \u00b7 2015 / 2017",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 72
+  },
+  "MacBook8,1": {
+    "name": "MacBook \u00b7 12-inch 2015",
+    "native_max": 11,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 57
+  },
+  "MacBook9,1": {
+    "name": "MacBook \u00b7 12-inch 2016",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 63
+  },
+  "MacBook10,1": {
+    "name": "MacBook \u00b7 12-inch 2017",
+    "native_max": 13,
+    "gpu_class": "metal",
+    "graphics_patch_from": null,
+    "capacity": 67
+  },
+  "Macmini5,1": {
+    "name": "Mac mini \u00b7 2011",
+    "native_max": 10,
+    "gpu_class": "non_metal",
+    "graphics_patch_from": 11,
+    "capacity": 63
+  },
+  "Macmini5,2": {
+    "name": "Mac mini \u00b7 2011",
+    "native_max": 10,
+    "gpu_class": "non_metal",
+    "graphics_patch_from": 11,
+    "capacity": 63
+  },
+  "Macmini5,3": {
+    "name": "Mac mini \u00b7 2011",
+    "native_max": 10,
+    "gpu_class": "non_metal",
+    "graphics_patch_from": 11,
+    "capacity": 63
+  },
+  "Macmini6,1": {
+    "name": "Mac mini \u00b7 2012",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 75
+  },
+  "Macmini6,2": {
+    "name": "Mac mini \u00b7 2012",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 75
+  },
+  "Macmini7,1": {
+    "name": "Mac mini \u00b7 2014",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 72
+  },
+  "iMac12,1": {
+    "name": "iMac \u00b7 2011",
+    "native_max": 10,
+    "gpu_class": "non_metal",
+    "graphics_patch_from": 11,
+    "capacity": 68
+  },
+  "iMac12,2": {
+    "name": "iMac \u00b7 2011",
+    "native_max": 10,
+    "gpu_class": "non_metal",
+    "graphics_patch_from": 11,
+    "capacity": 68
+  },
+  "iMac13,1": {
+    "name": "iMac \u00b7 2012 / early 2013",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 78
+  },
+  "iMac13,2": {
+    "name": "iMac \u00b7 2012 / early 2013",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 78
+  },
+  "iMac13,3": {
+    "name": "iMac \u00b7 2012 / early 2013",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 78
+  },
+  "iMac14,1": {
+    "name": "iMac \u00b7 2013 / 2014",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 80
+  },
+  "iMac14,2": {
+    "name": "iMac \u00b7 2013 / 2014",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 80
+  },
+  "iMac14,3": {
+    "name": "iMac \u00b7 2013 / 2014",
+    "native_max": 10,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 12,
+    "capacity": 80
+  },
+  "iMac14,4": {
+    "name": "iMac \u00b7 2013 / 2014",
+    "native_max": 11,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 80
+  },
+  "iMac15,1": {
+    "name": "iMac \u00b7 Retina 2014 / 2015",
+    "native_max": 11,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 83
+  },
+  "iMac16,1": {
+    "name": "iMac \u00b7 late 2015",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 85
+  },
+  "iMac16,2": {
+    "name": "iMac \u00b7 late 2015",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 85
+  },
+  "iMac17,1": {
+    "name": "iMac \u00b7 late 2015",
+    "native_max": 12,
+    "gpu_class": "legacy_metal",
+    "graphics_patch_from": 13,
+    "capacity": 85
+  },
+  "iMac18,1": {
+    "name": "iMac \u00b7 2017",
+    "native_max": 13,
+    "gpu_class": "metal",
+    "graphics_patch_from": null,
+    "capacity": 90
+  },
+  "iMac18,2": {
+    "name": "iMac \u00b7 2017",
+    "native_max": 13,
+    "gpu_class": "metal",
+    "graphics_patch_from": null,
+    "capacity": 90
+  },
+  "iMac18,3": {
+    "name": "iMac \u00b7 2017",
+    "native_max": 13,
+    "gpu_class": "metal",
+    "graphics_patch_from": null,
+    "capacity": 90
+  }
+}

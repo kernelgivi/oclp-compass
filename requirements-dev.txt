@@ -1,0 +1,2 @@
+# Formatting only; the runtime itself has no third-party dependencies.
+black==26.1.0

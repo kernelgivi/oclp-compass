@@ -1,0 +1,19 @@
+{
+  "model": "MacBookPro13,3",
+  "ram_gb": 16,
+  "storage": "ssd",
+  "free_gb": 84,
+  "cpu": "Intel Core i7",
+  "cores": 4,
+  "gpus": [
+    "Intel HD Graphics 530",
+    "AMD Radeon Pro 455"
+  ],
+  "arch": "x86_64",
+  "current_os": "15.7",
+  "avx2": true,
+  "origin": "manual",
+  "notes": [
+    "Example only. Replace with real detected hardware."
+  ]
+}

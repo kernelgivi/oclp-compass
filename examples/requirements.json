@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Example editor \u2014 replace with your vendor-checked requirements",
+    "min_os": 14,
+    "avx2": false,
+    "metal": false
+  }
+]

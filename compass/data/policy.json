@@ -1,0 +1,65 @@
+{
+  "reviewed": "2026-11-08",
+  "stable_oclp": "2.5.1",
+  "prerelease_oclp": "3.0.0-rc.5",
+  "sources": [
+    {
+      "id": "models",
+      "title": "Dortania \u00b7 supported models",
+      "url": "https://dortania.github.io/OpenCore-Legacy-Patcher/MODELS.html"
+    },
+    {
+      "id": "graphics",
+      "title": "Dortania \u00b7 graphics and hardware issues",
+      "url": "https://dortania.github.io/OpenCore-Legacy-Patcher/TROUBLESHOOT-HARDWARE.html"
+    },
+    {
+      "id": "faq",
+      "title": "Dortania \u00b7 FAQ and limitations",
+      "url": "https://dortania.github.io/OpenCore-Legacy-Patcher/FAQ.html"
+    },
+    {
+      "id": "issues",
+      "title": "Dortania \u00b7 ongoing issues",
+      "url": "https://dortania.github.io/OpenCore-Legacy-Patcher/ONGOING-ISSUES.html"
+    },
+    {
+      "id": "releases",
+      "title": "Dortania \u00b7 upstream releases (Tahoe is prerelease)",
+      "url": "https://github.com/dortania/OpenCore-Legacy-Patcher/releases"
+    }
+  ],
+  "systems": [
+    {
+      "major": 11,
+      "name": "Big Sur",
+      "recency": 15
+    },
+    {
+      "major": 12,
+      "name": "Monterey",
+      "recency": 30
+    },
+    {
+      "major": 13,
+      "name": "Ventura",
+      "recency": 48
+    },
+    {
+      "major": 14,
+      "name": "Sonoma",
+      "recency": 72
+    },
+    {
+      "major": 15,
+      "name": "Sequoia",
+      "recency": 94
+    },
+    {
+      "major": 26,
+      "name": "Tahoe",
+      "recency": 100,
+      "experimental": true
+    }
+  ]
+}

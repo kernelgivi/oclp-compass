@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>Compass — macOS workbench</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to workspace</a>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <button class="brand" data-go="overview" aria-label="Compass home">
+          <span class="brand-mark" aria-hidden="true"><i></i></span
+          ><span>COMPASS<small>macOS workbench</small></span>
+        </button>
+        <div class="sidebar-rule"><span>WORKSPACE</span><span>02</span></div>
+        <nav aria-label="Workspace navigation">
+          <button class="nav active" data-tab="overview" aria-current="page">
+            <span class="nav-number">01</span
+            ><span>Recommendation<small>Find the best fit</small></span>
+          </button>
+          <button class="nav" data-tab="compare">
+            <span class="nav-number">02</span
+            ><span>Compare versions<small>Understand the tradeoffs</small></span>
+          </button>
+          <button class="nav" data-tab="plan">
+            <span class="nav-number">03</span
+            ><span>Upgrade plan<small>Prepare and review</small></span>
+          </button>
+          <button class="nav" data-tab="hardware">
+            <span class="nav-number">04</span
+            ><span>Hardware lab<small>Inspect and simulate</small></span>
+          </button>
+          <button class="nav" data-tab="evidence">
+            <span class="nav-number">05</span
+            ><span>Owner reports<small>Read the evidence</small></span>
+          </button>
+          <button class="nav" data-tab="method">
+            <span class="nav-number">06</span
+            ><span>Method & sources<small>Check the reasoning</small></span>
+          </button>
+        </nav>
+        <button id="open-command" class="command-trigger">Jump to… <kbd>⌘ / Ctrl K</kbd></button>
+        <div class="sidebar-bottom">
+          <span class="status-dot"></span><strong>Local, read-only session</strong>
+          <p>Your hardware stays on this machine. No account or administrator access required.</p>
+          <span class="build">COMPASS 0.2.0 / ALPHA</span>
+        </div>
+      </aside>
+      <div class="workspace">
+        <header class="topbar">
+          <div class="breadcrumb">
+            WORKSPACE <span>/</span> <strong id="page-name">Recommendation</strong>
+          </div>
+          <div class="top-actions">
+            <button id="text-size" class="quiet" aria-pressed="false">Larger text</button
+            ><button id="theme-toggle" class="quiet" aria-pressed="false">Light mode</button
+            ><span class="local-label"><span class="status-dot"></span> LOCAL</span>
+          </div>
+        </header>
+        <main id="main" tabindex="-1">
+          <div id="error" class="message error" role="alert" hidden>
+            <span id="error-text"></span
+            ><button id="dismiss-error" aria-label="Dismiss error">Dismiss</button>
+          </div>
+          <div id="loading" class="message" role="status">Loading your local hardware profile…</div>
+          <section id="overview" class="page" aria-labelledby="overview-title">
+            <div class="page-heading">
+              <div>
+                <p class="kicker">MACOS COMPATIBILITY / DECISION WORKSPACE</p>
+                <h1 id="overview-title">Find the right macOS.</h1>
+                <p class="lede">
+                  A clear view of what your Mac can run, what it may cost in responsiveness, and
+                  what needs checking first.
+                </p>
+              </div>
+              <div class="export-controls">
+                <label class="sr-only" for="export-format">Report format</label
+                ><select id="export-format">
+                  <option value="markdown">Markdown</option>
+                  <option value="json">JSON analysis</option></select
+                ><button id="export" class="button secondary" disabled>
+                  Export report <span aria-hidden="true">↗</span>
+                </button>
+              </div>
+            </div>
+            <div class="dashboard-grid">
+              <section class="recommend-panel panel">
+                <div class="panel-caption">
+                  <span>RECOMMENDED FOR YOUR PRIORITIES</span><span class="tag">PROVISIONAL</span>
+                </div>
+                <div class="os-heading">
+                  <span class="os-prefix">macOS</span>
+                  <h2 id="best-name">Waiting for analysis</h2>
+                </div>
+                <p id="best-description" class="recommend-description">
+                  The recommendation uses a reviewed compatibility policy and transparent
+                  performance estimates.
+                </p>
+                <div class="recommend-stats">
+                  <div>
+                    <span>WEIGHTED FIT</span><strong id="fit-value">—</strong
+                    ><small>Preference index / 100</small>
+                  </div>
+                  <div>
+                    <span>INSTALLATION PATH</span><strong id="best-route">—</strong
+                    ><small id="patch-description">—</small>
+                  </div>
+                  <div>
+                    <span>OWNER EVIDENCE</span><strong id="report-count">—</strong
+                    ><small id="best-evidence">—</small>
+                  </div>
+                </div>
+                <div class="hero-actions">
+                  <button id="review-plan" class="button primary" disabled>
+                    Review upgrade plan <span aria-hidden="true">→</span></button
+                  ><button id="why" class="button text" disabled>Why this version?</button>
+                </div>
+                <p class="footnote">
+                  A ranking helps you choose what to investigate. It does not verify app
+                  compatibility, security-update coverage, or real-world speed.
+                </p>
+              </section>
+              <section class="system-panel panel">
+                <div class="panel-caption">
+                  <span>SYSTEM PROFILE</span><span id="origin" class="tag">CONNECTING</span>
+                </div>
+                <div class="hardware-drawing" aria-hidden="true">
+                  <svg viewBox="0 0 360 145">
+                    <g class="diagram-lines">
+                      <path
+                        d="M18 25h35v31h47M342 25h-35v31h-47M18 120h35V89h47M342 120h-35V89h-47M126 18v21M145 18v21M164 18v21M183 18v21M202 18v21M221 18v21M240 18v21M126 106v21M145 106v21M164 106v21M183 106v21M202 106v21M221 106v21M240 106v21"
+                      />
+                      <rect x="100" y="39" width="160" height="67" rx="4" />
+                      <rect x="110" y="49" width="140" height="47" rx="2" />
+                      <path d="M130 72h100M180 59v26" />
+                      <circle cx="18" cy="25" r="4" />
+                      <circle cx="342" cy="25" r="4" />
+                      <circle cx="18" cy="120" r="4" />
+                      <circle cx="342" cy="120" r="4" />
+                    </g>
+                  </svg>
+                </div>
+                <h2 id="device-name">Reading hardware…</h2>
+                <p id="model-id" class="mono">—</p>
+                <dl class="system-facts">
+                  <div>
+                    <dt>Memory</dt>
+                    <dd id="ram-value">—</dd>
+                  </div>
+                  <div>
+                    <dt>Boot drive</dt>
+                    <dd id="disk-value">—</dd>
+                  </div>
+                  <div>
+                    <dt>Processor</dt>
+                    <dd id="cpu-value">—</dd>
+                  </div>
+                  <div>
+                    <dt>Free space</dt>
+                    <dd id="free-value">—</dd>
+                  </div>
+                </dl>
+                <button class="text-link" data-go="hardware">
+                  Inspect hardware & assumptions <span aria-hidden="true">↗</span>
+                </button>
+              </section>
+            </div>
+            <section class="preferences panel" aria-labelledby="priority-title">
+              <div class="preference-heading">
+                <h2 id="priority-title">Choose your priority</h2>
+                <p id="priority-description">
+                  Balance estimated responsiveness, a newer OS, and patch maintenance.
+                </p>
+              </div>
+              <div class="preference-controls">
+                <div class="segmented" role="group" aria-label="Recommendation priority">
+                  <button data-priority="smoothness" aria-pressed="false">Smoothness</button
+                  ><button data-priority="balanced" aria-pressed="true" class="selected">
+                    Balanced</button
+                  ><button data-priority="apps" aria-pressed="false">Newer apps</button>
+                </div>
+                <label class="minimum-label" for="min-os"
+                  >Minimum OS your apps require<select id="min-os">
+                    <option value="11">No minimum selected</option>
+                    <option value="12">Monterey or newer</option>
+                    <option value="13">Ventura or newer</option>
+                    <option value="14">Sonoma or newer</option>
+                    <option value="15">Sequoia or newer</option>
+                    <option value="26">Tahoe or newer</option>
+                  </select></label
+                >
+              </div>
+            </section>
+            <section class="options-section" aria-labelledby="options-title">
+              <div class="section-heading">
+                <div>
+                  <span class="kicker">THE FULL PICTURE</span>
+                  <h2 id="options-title">Options for this Mac</h2>
+                </div>
+                <div class="table-controls">
+                  <label class="checkbox-label"
+                    ><input id="show-excluded" type="checkbox" checked /> Show excluded</label
+                  ><label class="sr-only" for="sort-options">Sort versions</label
+                  ><select id="sort-options">
+                    <option value="fit">Sort by fit</option>
+                    <option value="newest">Newest first</option>
+                    <option value="smooth">Smoothness first</option>
+                  </select>
+                </div>
+              </div>
+              <div
+                class="table-scroll"
+                tabindex="0"
+                role="region"
+                aria-label="macOS compatibility table"
+              >
+                <table>
+                  <caption class="sr-only">
+                    macOS version preference scores and compatibility
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">macOS</th>
+                      <th scope="col">Path</th>
+                      <th scope="col">
+                        Smoothness
+                        <button class="help" data-help="smoothness" aria-label="Explain smoothness">
+                          ?
+                        </button>
+                      </th>
+                      <th scope="col">
+                        OS recency
+                        <button
+                          class="help"
+                          data-help="app_recency"
+                          aria-label="Explain OS recency"
+                        >
+                          ?
+                        </button>
+                      </th>
+                      <th scope="col">
+                        Maintenance
+                        <button
+                          class="help"
+                          data-help="maintenance"
+                          aria-label="Explain maintenance"
+                        >
+                          ?
+                        </button>
+                      </th>
+                      <th scope="col">Fit</th>
+                      <th scope="col"><span class="sr-only">Details</span></th>
+                    </tr>
+                  </thead>
+                  <tbody id="candidates"></tbody>
+                </table>
+              </div>
+              <p class="table-note">
+                All scores are estimates on a 0–100 preference scale. Select a version to see the
+                calculation, exclusions, and known limitations.
+              </p>
+            </section>
+            <section class="app-section panel">
+              <div class="section-heading compact">
+                <div>
+                  <span class="kicker">APPLICATION CONSTRAINTS</span>
+                  <h2>Check what you actually need.</h2>
+                </div>
+                <span id="app-count" class="tag">0 ESSENTIAL APPS</span>
+              </div>
+              <p>
+                Add the requirements for a specific app version after checking its vendor. Compass
+                will exclude options that cannot meet these declared requirements; it does not scan
+                or certify your applications.
+              </p>
+              <form id="app-form" class="app-form">
+                <label
+                  >App and version<input
+                    id="app-name"
+                    maxlength="100"
+                    placeholder="For example: your editor, version 2026"
+                    required /></label
+                ><label
+                  >Minimum macOS<select id="app-min">
+                    <option value="11">Big Sur 11</option>
+                    <option value="12">Monterey 12</option>
+                    <option value="13">Ventura 13</option>
+                    <option value="14">Sonoma 14</option>
+                    <option value="15">Sequoia 15</option>
+                    <option value="26">Tahoe 26</option>
+                  </select></label
+                >
+                <div class="app-flags">
+                  <label class="checkbox-label"
+                    ><input type="checkbox" id="app-avx" /> Requires AVX2</label
+                  ><label class="checkbox-label"
+                    ><input type="checkbox" id="app-metal" /> Requires Metal</label
+                  >
+                </div>
+                <button type="submit" class="button secondary">Add app</button>
+              </form>
+              <ul id="app-list" class="app-list"></ul>
+            </section>
+            <details class="limitations panel">
+              <summary>What this analysis cannot verify <span id="warning-count"></span></summary>
+              <ul id="warnings"></ul>
+            </details>
+          </section>
+          <section id="compare" class="page" hidden aria-labelledby="compare-title">
+            <div class="page-heading">
+              <div>
+                <p class="kicker">VERSION COMPARISON</p>
+                <h1 id="compare-title">See the tradeoffs.</h1>
+                <p class="lede">
+                  Compare any two reviewed options for the same hardware and priorities. Every
+                  difference below is a preference estimate.
+                </p>
+              </div>
+            </div>
+            <div class="comparison-selectors panel">
+              <label>Option A<select id="compare-left"></select></label
+              ><span class="versus" aria-hidden="true">/</span
+              ><label>Option B<select id="compare-right"></select></label
+              ><button id="run-compare" class="button secondary">Compare versions</button>
+            </div>
+            <div id="comparison-result" aria-live="polite"></div>
+          </section>
+          <section id="plan" class="page" hidden aria-labelledby="plan-title">
+            <div class="page-heading">
+              <div>
+                <p class="kicker">PREPARATION WORKSPACE</p>
+                <h1 id="plan-title">Have a way back.</h1>
+                <p class="lede">
+                  A checklist for the macOS version you choose. Confirmations belong to this target
+                  and session; they do not verify that a backup or recovery method works.
+                </p>
+              </div>
+              <button id="export-plan" class="button secondary" disabled>
+                Export plan as Markdown
+              </button>
+            </div>
+            <div class="plan-toolbar panel">
+              <label>Target macOS<select id="plan-target"></select></label>
+              <div>
+                <span class="kicker">PLANNING STATUS</span
+                ><strong id="plan-state">Select a reviewed version</strong>
+              </div>
+              <span id="plan-route" class="tag">—</span>
+            </div>
+            <div id="plan-content" aria-live="polite"></div>
+          </section>
+          <section id="hardware" class="page" hidden aria-labelledby="hardware-title">
+            <div class="page-heading">
+              <div>
+                <p class="kicker">INVENTORY & SENSITIVITY ANALYSIS</p>
+                <h1 id="hardware-title">Know the machine.</h1>
+                <p class="lede">
+                  Inspect what was detected, correct missing details, or test a hypothetical
+                  configuration before spending money.
+                </p>
+              </div>
+              <div class="hardware-actions">
+                <button id="rescan" class="button secondary">Rescan this Mac</button
+                ><button id="export-profile" class="button secondary" disabled>Save profile</button
+                ><label class="button secondary file-label"
+                  >Load profile<input
+                    id="import-profile"
+                    type="file"
+                    accept=".json,application/json"
+                /></label>
+              </div>
+            </div>
+            <div class="hardware-grid">
+              <section class="panel inventory">
+                <div class="section-heading compact">
+                  <h2>Hardware inventory</h2>
+                  <span id="inventory-origin" class="tag">—</span>
+                </div>
+                <dl id="full-inventory"></dl>
+                <p class="footnote">
+                  OpenCore may spoof the model identifier. Check the original identifier and any GPU
+                  modifications before following an installation guide.
+                </p>
+              </section>
+              <section class="panel configuration">
+                <h2>Explore a configuration</h2>
+                <p>This changes the analysis profile only. It does not modify your Mac.</p>
+                <form id="hardware-form">
+                  <label
+                    >Find a model<input
+                      id="model-search"
+                      type="search"
+                      placeholder="Search model, family, or year"
+                      autocomplete="off" /></label
+                  ><label>Reviewed model<select id="model-select"></select></label>
+                  <div class="form-pair">
+                    <label
+                      >Memory, GiB<input
+                        id="ram-input"
+                        type="number"
+                        min="1"
+                        max="2048"
+                        step="0.5"
+                        required /></label
+                    ><label
+                      >Boot drive<select id="disk-select">
+                        <option value="unknown">Unknown</option>
+                        <option value="ssd">SSD</option>
+                        <option value="hdd">HDD</option>
+                        <option value="fusion">Fusion Drive</option>
+                      </select></label
+                    >
+                  </div>
+                  <label
+                    >Available space, GiB (optional)<input
+                      id="free-input"
+                      type="number"
+                      min="0"
+                      max="1000000"
+                      step="0.1"
+                      placeholder="Unknown"
+                  /></label>
+                  <div class="button-row">
+                    <button class="button primary" type="submit">Analyze configuration</button
+                    ><button class="button text" id="restore" type="button">
+                      Restore session profile
+                    </button>
+                  </div>
+                </form>
+              </section>
+            </div>
+            <section class="panel scenario-panel">
+              <div class="section-heading compact">
+                <div>
+                  <span class="kicker">WHAT IF?</span>
+                  <h2>Would different hardware change the ranking?</h2>
+                </div>
+                <span class="tag">HYPOTHETICAL</span>
+              </div>
+              <p>
+                Use this to understand the model’s assumptions. It does not predict a measured speed
+                increase or establish whether RAM and storage can be replaced in your Mac.
+              </p>
+              <form id="scenario-form">
+                <label
+                  >Hypothetical memory, GiB<input
+                    id="scenario-ram"
+                    type="number"
+                    min="1"
+                    max="2048"
+                    step="0.5"
+                    required /></label
+                ><label
+                  >Hypothetical boot drive<select id="scenario-drive">
+                    <option value="unknown">Unknown</option>
+                    <option value="ssd">SSD</option>
+                    <option value="hdd">HDD</option>
+                    <option value="fusion">Fusion Drive</option>
+                  </select></label
+                ><button class="button secondary" type="submit">Run simulation</button>
+              </form>
+              <div id="scenario-result" aria-live="polite"></div>
+            </section>
+          </section>
+          <section id="evidence" class="page" hidden aria-labelledby="evidence-title">
+            <div class="page-heading">
+              <div>
+                <p class="kicker">SOURCE-LINKED OWNER REPORTS</p>
+                <h1 id="evidence-title">Read the experience.</h1>
+                <p class="lede">
+                  Reports are matched to the exact model and major macOS version. Small samples,
+                  missing information, and conflicting experiences remain visible.
+                </p>
+              </div>
+            </div>
+            <div id="corpus-note" class="message"></div>
+            <div class="evidence-filters">
+              <label
+                >Outcome<select id="evidence-sentiment">
+                  <option value="all">All outcomes</option>
+                  <option value="positive">Positive</option>
+                  <option value="mixed">Mixed</option>
+                  <option value="negative">Negative</option>
+                </select></label
+              ><label
+                >macOS<select id="evidence-os">
+                  <option value="all">All versions</option>
+                </select></label
+              ><label
+                >Search reports<input
+                  id="evidence-search"
+                  type="search"
+                  placeholder="Search summary, version, or author"
+              /></label>
+            </div>
+            <div id="evidence-list"></div>
+            <section class="panel evidence-guide">
+              <h2>Bring your own reviewed evidence.</h2>
+              <p>
+                A larger corpus can be supplied at launch. Structural validation checks format and
+                duplicate source links; it cannot establish that a report is true.
+              </p>
+              <code>python3 -m compass gui --reports reports.json</code>
+              <p>
+                Imports replace the bundled corpus for the session. Nothing is automatically scraped
+                or submitted. See <code>docs/EVIDENCE.md</code> for the schema and review procedure.
+              </p>
+            </section>
+          </section>
+          <section id="method" class="page" hidden aria-labelledby="method-title">
+            <div class="page-heading">
+              <div>
+                <p class="kicker">POLICY, ASSUMPTIONS & REFERENCES</p>
+                <h1 id="method-title">Understand the result.</h1>
+                <p class="lede">
+                  Compatibility rules decide what is eligible. Preference weights decide what ranks
+                  highest. Owner reports have a small, bounded influence.
+                </p>
+              </div>
+            </div>
+            <section class="panel method-summary">
+              <h2>The ranking in plain language</h2>
+              <p>
+                Compass starts with a hand-reviewed model profile. It estimates how memory, storage,
+                OS overhead, and graphics patching may affect responsiveness, then combines that
+                estimate with OS recency and maintenance ease.
+              </p>
+              <p id="weights" class="weight-line"></p>
+              <p>
+                These constants have not been fitted to benchmarks. A high score does not establish
+                that an OS is secure, an application will work, or your Mac will run smoothly.
+              </p>
+            </section>
+            <div id="glossary" class="glossary"></div>
+            <section class="panel methodology">
+              <h2>How owner reports influence the estimate</h2>
+              <p>
+                Only exact-model reports for the target major OS are matched. One author contributes
+                once per model and OS. Old reports and incomplete or different hardware
+                configurations carry less weight. Eight neutral pseudo-observations temper small
+                samples.
+              </p>
+              <code>Adjustment = 8 × weighted sentiment / (8 + effective sample)</code>
+              <p>
+                Contradictions are shown, not averaged away from view. Confidence stays “limited”
+                for anecdotal reports. Reports cannot make an excluded version eligible.
+              </p>
+            </section>
+            <div class="section-heading">
+              <h2>Primary references</h2>
+              <span id="policy-date" class="secondary-text"></span>
+            </div>
+            <div id="sources" class="sources"></div>
+          </section>
+          <footer>
+            <span>Independent software by kernelgivi.</span>
+              <button class="text-link" data-go="method">Review the assumptions ↗</button></span
+            >
+          </footer>
+        </main>
+      </div>
+    </div>
+    <dialog id="detail" aria-label="macOS version analysis">
+      <div class="dialog-heading">
+        <span class="kicker">VERSION ANALYSIS</span
+        ><button id="close-detail" class="quiet" aria-label="Close details">Close ×</button>
+      </div>
+      <div id="detail-content"></div>
+    </dialog>
+    <dialog id="help-dialog" aria-label="Score explanation">
+      <div class="dialog-heading">
+        <span class="kicker">READING THE SCORES</span
+        ><button id="close-help" class="quiet" aria-label="Close explanation">Close ×</button>
+      </div>
+      <div id="help-content"></div>
+    </dialog>
+    <dialog id="command-dialog" class="command-dialog" aria-label="Workspace commands">
+      <label for="command-search">Jump to a workspace or action</label
+      ><input id="command-search" type="search" placeholder="Search commands…" autocomplete="off" />
+      <div id="command-list"></div>
+      <p class="footnote">Use Tab to move through results. Press Escape to close.</p>
+    </dialog>
+    <div id="toast" role="status" class="toast" hidden></div>
+  </body>
+</html>
