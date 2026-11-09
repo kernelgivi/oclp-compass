@@ -136,23 +136,4 @@ python3 -m pip install -r requirements-dev.txt
 python3 -m black --check compass tests
 npm run format:check
 ```
-
-The build was checked with **78 Python tests** and a real Chromium workflow covering comparisons, plans, confirmations, simulations, imports, filters, downloads, command navigation, and all six mobile workspaces. The [validation record](docs/VALIDATION.md) distinguishes those results from unperformed Safari and physical-Mac checks. CI configuration is included; no remote CI run is claimed before you push this repository.
-
-## Publish to GitHub
-
-Create an empty repository named `oclp-compass`, then run these commands from this extracted folder:
-
-```bash
-git init -b main
-git add .
-git commit -m "Add OCLP Compass workbench"
-git remote add origin https://github.com/YOUR_USERNAME/oclp-compass.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME`. Suggested repository description: “Local-first macOS upgrade planning for Intel Macs, with explainable OCLP recommendations, community evidence, a GUI and a CLI.” Suggested topics: `macos`, `oclp`, `opencore-legacy-patcher`, `hardware-detection`, `python`, `privacy`.
-
-Before a stable release, complete live Intel-Mac testing, independent policy review, and security review. This project never installs macOS, builds OpenCore, patches system volumes, or changes security settings.
-
 Contributions: [CONTRIBUTING.md](CONTRIBUTING.md). Release notes: [CHANGELOG.md](CHANGELOG.md). License: [MIT](LICENSE). Source attribution: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
